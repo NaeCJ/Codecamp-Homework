@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW2 Form html</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        form{
+            width: 380px;
+            height: 400px;
+            margin: auto;
+            border: 2px solid salmon;
+            border-radius: 2px;
+        }
+        div.fly{
+            display: inline-block;
+            text-align: left;
+            margin: 15px 20px;
+        }
+        input{
+            width: 130.4px;
+        }
+        div.human{
+            display: inline-block;
+            width: 5px;
+            margin: 15px 58px 15px 20px;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+    <div class="fly">
+        <p>Flying from</p>
+        <select name="city1" id="city1">
+            <option value="bangkok" >Bangkok,Thailand</option>
+        </select>
+    </div>
+    <div class="fly">
+        <p>To</p>
+        <select name="city2" id="city2">
+            <option value="chiangmai">Chiang Mai,Thailand</option>
+        </select>
+    </div>
+
+    <div class="fly">
+        <p><label for="departing">Departing</label></p>
+        <input type="date" name="date1" value="date1">
+    </div>
+    <div class="fly">
+        <p><label for="returning">Returning</label></p>
+        <input type="date" name="date2" value="date2">
+    </div>
+
+    <div class="human">
+        <p><label for="adult">Adult</label></p>
+        <input type="number" name="adult" value="adult" style="width: 45px;padding: 0;text-align: center;">
+    </div>
+    <div class="human">
+        <p><label for="child">Child</label></p>
+        <input type="number" name="child" value="child" style="width: 45px;padding: 0;text-align: center;">
+    </div>
+    <div class="human">
+        <p><label for="infant">Infant</label></p>
+        <input type="number" name="infant" value="infant" style="width: 45px;padding: 0;text-align: center;">
+    </div>
+    <div class="human">
+        <p>Currency</p>
+        <select name="currency" id="currency">
+            <option value="thb">THB</option>
+        </select>
+    </div>
+    <input type="submit" value="search" style="margin: 40px 20px;">
+    </form>
+</body>
+</html>

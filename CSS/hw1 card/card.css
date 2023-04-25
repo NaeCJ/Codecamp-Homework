@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+.card{
+    display: inline-block;
+    width: 300px;
+    box-shadow: 4px 8px 10px gray;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: rgb(128, 247, 144);
+}
+
+.card img{
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.container{
+    text-align: center;
+    padding: 2px 16px;    
+    color: rgb(163, 48, 48);
+}
+
+.container h4{
+    margin-bottom: 8px;
+}
+
+.container p{
+    margin-top: 12px;
+}
